@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://ct5gk3wdbl4us"]
+[gd_scene load_steps=4 format=3 uid="uid://ct5gk3wdbl4us"]
 
 [ext_resource type="Texture2D" uid="uid://bu7wxj3gdg5tr" path="res://Textures/dirt_full_new.png" id="1_qxwfo"]
 [ext_resource type="PackedScene" uid="uid://cimmgox3846lb" path="res://Scenes/Player/player.tscn" id="2_280cj"]
+[ext_resource type="PackedScene" uid="uid://b5uu6fly08jwx" path="res://Scenes/Enemies/enemy_kolbold_weak.tscn" id="3_34km0"]
 
 [node name="World" type="Node2D"]
 
@@ -13,3 +14,5 @@ region_enabled = true
 region_rect = Rect2(-4000, -4000, 4000, 4000)
 
 [node name="Player" parent="." instance=ExtResource("2_280cj")]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("3_34km0")]
