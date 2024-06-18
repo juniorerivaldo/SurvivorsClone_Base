@@ -32,7 +32,6 @@ one_shot = true
 
 [node name="HurtBox" parent="." instance=ExtResource("3_wmcck")]
 collision_mask = 2
-HurtBoxType = 0
 
 [node name="CollisionShape2D" parent="HurtBox" index="0"]
 position = Vector2(1.5, 2.5)
